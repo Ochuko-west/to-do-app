@@ -1,0 +1,263 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-image: linear-gradient(to right, #e22865, #37adcd);
+    color: #fff;
+}
+.container-md{
+    width: 95%;
+    margin: auto;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px 0px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.nav h2{
+    font-size: 2em;
+    
+}
+h2 i{
+    margin-right: 4px;
+}
+.user-input{
+    text-align: center;
+    
+    width: 380px;
+}
+.user-input input{
+width: 70%;
+outline: none;
+padding: 8px;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+border: 1px solid lightgrey;
+transition: all 0.5s ease-in-out;
+}
+.user-input input:focus{
+    box-shadow: 0 0 5px #e22865;
+    border: 1px solid  #e22865;
+}
+.user-input button{
+    cursor: pointer;
+    padding: 8px;
+    transition: 1s;
+    outline: none;
+    border: 1px solid lightgrey;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 20%
+}
+.user-input button:hover{
+    color: #fff;
+    background-color: transparent;
+}
+.to-do-items{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 25px;
+    
+}
+.item{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    margin-top: 10px;
+    padding: 22px;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    color:#454545;
+}
+.item1{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    margin-top: 10px;
+    padding: 22px;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    color:green;
+    box-shadow: 0 0 20px green;
+    border: 1px solid green;
+
+    }
+.alt{
+    position: absolute;
+    bottom: 100%;
+   
+    right: 73%;
+    transition: all 0.1s ease-in-out;
+    flex-wrap: nowrap;
+    font-size: 0.6rem;
+    color: #454545
+    
+}
+.alttt{
+    position: absolute;
+    bottom: 100%;
+   
+    right: 70%;
+   
+    flex-wrap: nowrap;
+    font-size: 0.6rem;
+    color: #454545
+}
+
+.alt1{
+    position: absolute;
+    bottom: 100%;
+   
+    left: 73%;
+    /* transition: all 0.1s ease-in-out; */
+    flex-wrap: nowrap;
+    font-size: 0.6rem;
+    color: #454545
+    
+}
+.alt2{
+    position: absolute;
+    bottom: 100%;
+   
+    right: 35%;
+    /* transition: all 0.1s ease-in-out; */
+    flex-wrap: nowrap;
+    font-size: 0.6rem;
+    color: #454545
+    
+}
+.altt{
+    position: absolute;
+    bottom: 100%;
+   
+    right: 42%;
+  
+    flex-wrap: nowrap;
+    font-size: 0.6rem;
+    color: #454545;
+    
+    flex-wrap: nowrap;
+    font-size: 0.6rem;
+    color: #454545
+    
+}
+
+
+ .item:hover{
+box-shadow: 0 0 20px #e22865;
+border: 1px solid #e22865;
+} 
+.item1{
+   
+    box-shadow: 0 0 20px green;
+    border: 1px solid green;
+
+    }
+ .item1:hover{
+        box-shadow: 0 0 20px green;
+        border: 1px solid green;
+    
+  }
+.item i{
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.iconDiv{
+    margin: auto;
+    display: flex;
+    position: relative;
+}
+.check{
+    color: green;
+    
+}
+.show{
+    display: none;
+}
+
+.item2{
+    border : none;
+    outline : none;
+    text-Transform : uppercase;
+    transition : all 0.5s ease-in-out;
+    color : #454545;
+    width: 80%;
+}
+.item22{
+    border : none;
+    outline : none;
+    text-Transform : uppercase;
+    transition : all 0.5s ease-in-out;
+    color : green;
+    width: 80%;
+    text-decoration: line-through;
+    font-size:75%;
+}
+.fa{
+    transform: scale(1.2);
+}
+
+/* mediaqueries */
+/* On screens that are 600px or less, set the nav class flex-direction to col */
+@media screen and (max-width: 600px) {
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 25px 0px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .nav h2{
+        font-size: 2em;
+        margin: 25px 0px;
+        
+    }
+    .user-input{
+       margin: 10px 0px;
+       align-items: center;
+       width: 100%;
+    }
+/* On screens that are 600px or less, set the width of the to-do-items to 400px */
+    .to-do-items{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 10px;
+        
+    }.item2{
+        border : none;
+        outline : none;
+        text-Transform : lowercase;
+        transition : all 0.5s ease-in-out;
+        color : #454545;
+        width: 80%;
+    }
+    .item{
+       
+        padding: 12px;
+        
+    }
+    .item22{
+        text-Transform : lowercase;
+        transition : all 0.5s ease-in-out;
+        color : green;
+        width: 80%;
+        text-decoration: line-through;
+        font-size:75%;
+    }
+  }
